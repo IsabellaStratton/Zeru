@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+
+<title>Zeru</title>
+</head>
+<body>
+
+<div class="top">
+
+  <div class="white xlarge" style="max-width:1200px;margin:auto;">
+    <div class="right padding-16" id='openweathermap-widget'></div>
+                    <script type='text/javascript'>
+                    window.myWidgetParam = {
+                        id: 24,
+                        cityid: 2179537,
+                        appid: '',
+                        units: 'metric',
+                        containerid: 'openweathermap-widget',
+                    };
+                    (function() {
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.async = true;
+                        script.src = 'https://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(script, s);
+                    })();
+                  </script>
+                  
+                  <a style="margin-left: 1vw; text-decoration: none;" href="html.html">Back</a>
+
+                  
+    <div class="center" style="font-size:9vh; margin-bottom: 3vh; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';"> Weather</div>
+    
+
+  </div>
+</div>
+</body>
+</html>
